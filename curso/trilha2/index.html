@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trilha 2 — 7 Skills de Marketing | Claude Cowork</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{900:'#111827',800:'#1f2937',700:'#374151',600:'#4b5563'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif}.dark body{background-color:#111827}
+.topic-explanation{display:none}.topic-explanation.active{display:block}
+html:not(.dark) body{background-color:#f8fafc}
+html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}
+html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}
+html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) .border-dark-700{border-color:#e5e7eb}
+html:not(.dark) .text-blue-400{color:#2563eb}html:not(.dark) .bg-blue-500\/20{background-color:rgba(37,99,235,.12)}html:not(.dark) .bg-blue-500\/10{background-color:rgba(37,99,235,.08)}html:not(.dark) .border-blue-500\/30{border-color:rgba(37,99,235,.25)}
+html:not(.dark) .hover\:bg-blue-500\/10:hover{background-color:rgba(37,99,235,.08)}html:not(.dark) .hover\:text-blue-400:hover{color:#2563eb}html:not(.dark) .group:hover .group-hover\:text-blue-400{color:#2563eb}html:not(.dark) .hover\:border-blue-500\/30:hover{border-color:rgba(37,99,235,.25)}
+html:not(.dark) .hover\:text-emerald-400:hover{color:#059669}html:not(.dark) .hover\:bg-emerald-500\/10:hover{background-color:rgba(5,150,105,.08)}
+html:not(.dark) .hover\:text-purple-400:hover{color:#7c3aed}html:not(.dark) .hover\:bg-purple-500\/10:hover{background-color:rgba(124,58,237,.08)}
+html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+html:not(.dark) .text-primary{color:#a16207}html:not(.dark) .bg-primary\/10{background-color:rgba(161,98,7,.08)}html:not(.dark) .border-primary\/40{border-color:rgba(161,98,7,.25)}
+html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .text-yellow-400{color:#a16207}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}html:not(.dark) .hover\:text-yellow-300:hover{color:#854d0e}
+html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}
+.dark .border-dark-600{border-color:#374151}.dark .divide-dark-600>:not([hidden])~:not([hidden]){border-color:#374151}
+</style></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen">
+
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14">
+<div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300"><span class="text-2xl">🤖</span><span class="font-bold text-lg hidden sm:inline">Claude Cowork</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a href="../trilha1/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
+<a href="index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-blue-400 bg-blue-500/10"><span class="sm:hidden">T2</span><span class="hidden sm:inline">7 Skills</span></a>
+<a href="../trilha3/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Avançado</span></a>
+<button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-2"><svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button>
+</div></div></div></nav>
+
+<header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">TRILHA 2 — PRÁTICA</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">⚙️ As 7 Skills de Marketing</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">As 7 skills do vídeo do Jack, prontas pra rodar. Cada módulo entrega: contexto, prompts copiáveis, fluxo passo a passo e exemplo real. Substitui agência de US$ 10k/mês.</p>
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">7</div><div class="text-xs text-neutral-400">Módulos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">42</div><div class="text-xs text-neutral-400">Tópicos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">~5h</div><div class="text-xs text-neutral-400">Duração</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Inter.</div><div class="text-xs text-neutral-400">Nível</div></div>
+</div></div></header>
+
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+<section class="mb-12">
+<h2 class="text-2xl font-bold mb-6">Mapa da trilha</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<a href="#modulo-2-1" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all"><div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.1</span><span class="text-xs text-neutral-500">~45 min</span></div><h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">🐦 X Insight (Grok)</h3><p class="text-xs text-neutral-400">Trend scan sem API paga</p></a>
+<a href="#modulo-2-2" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all"><div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.2</span><span class="text-xs text-neutral-500">~40 min</span></div><h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">🕷️ Apify Competitive Intel</h3><p class="text-xs text-neutral-400">20k+ scrapers no Cowork</p></a>
+<a href="#modulo-2-3" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all"><div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.3</span><span class="text-xs text-neutral-500">~40 min</span></div><h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">📚 NotebookLM Deep Research</h3><p class="text-xs text-neutral-400">50+ fontes auto-curadas</p></a>
+<a href="#modulo-2-4" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all"><div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.4</span><span class="text-xs text-neutral-500">~45 min</span></div><h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">📊 Mission Control Dashboard</h3><p class="text-xs text-neutral-400">Tudo numa tela só</p></a>
+<a href="#modulo-2-5" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all"><div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.5</span><span class="text-xs text-neutral-500">~50 min</span></div><h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">⚖️ Contract Review (5 agentes)</h3><p class="text-xs text-neutral-400">Advogado-bot que não dorme</p></a>
+<a href="#modulo-2-6" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all"><div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.6</span><span class="text-xs text-neutral-500">~40 min</span></div><h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">🎨 Canva Design em Escala</h3><p class="text-xs text-neutral-400">10 slides em minutos</p></a>
+<a href="#modulo-2-7" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all"><div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.7</span><span class="text-xs text-neutral-500">~40 min</span></div><h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">📝 Notion Productivity OS</h3><p class="text-xs text-neutral-400">To-do alimentado por tudo</p></a>
+</div>
+</section>
+
+<h2 class="text-2xl font-bold mb-6">Conteúdo detalhado</h2>
+
+<!-- Card de cada módulo com chamada pro modulo-2-X.html. Versão enxuta sem 6 tópicos expansíveis -->
+
+<div id="modulo-2-1" class="bg-dark-800 rounded-xl border border-dark-600 mb-6 p-6">
+<div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.1</span><span class="text-xs text-neutral-500">~45 min</span></div>
+<h3 class="text-2xl font-bold mb-2">🐦 X Insight (Grok)</h3>
+<p class="text-neutral-400 text-sm mb-4">Skill que abre o X via computer use, conversa com Grok e devolve top signals do seu nicho scored por Primacy/Authority/Velocity/Fit. Substitui ferramentas de social listening de US$ 800/mês.</p>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4 text-xs">
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Matriz 4 fatores</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Scoring 1-20</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">YouTube channel check</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">GitHub trending</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Daily 9am</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Sem API paga</div>
+</div>
+<a href="modulo-2-1.html" class="inline-block px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors">Ver Completo →</a>
+</div>
+
+<div id="modulo-2-2" class="bg-dark-800 rounded-xl border border-dark-600 mb-6 p-6">
+<div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.2</span><span class="text-xs text-neutral-500">~40 min</span></div>
+<h3 class="text-2xl font-bold mb-2">🕷️ Apify Competitive Intel</h3>
+<p class="text-neutral-400 text-sm mb-4">Apify tem 20k+ scrapers prontos (Instagram, TikTok, Google Maps, Facebook). Esse módulo conecta como custom connector e roda intel competitiva sem você abrir aba alguma.</p>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4 text-xs">
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Custom connector</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">OAuth Apify</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Instagram reels</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">TikTok analytics</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Maps reviews</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Pricing scrape</div>
+</div>
+<a href="modulo-2-2.html" class="inline-block px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors">Ver Completo →</a>
+</div>
+
+<div id="modulo-2-3" class="bg-dark-800 rounded-xl border border-dark-600 mb-6 p-6">
+<div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.3</span><span class="text-xs text-neutral-500">~40 min</span></div>
+<h3 class="text-2xl font-bold mb-2">📚 NotebookLM Deep Research</h3>
+<p class="text-neutral-400 text-sm mb-4">Conecta NotebookLM ao Cowork. Você pede pesquisa profunda em 1 frase; ele cria notebook com 50+ fontes curadas, extrai frameworks, gera insights estruturados.</p>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4 text-xs">
+<div class="bg-dark-700 rounded p-2 text-neutral-300">50+ fontes</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Frameworks extraídos</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Deep research auto</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Skill v2 (otimizada)</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Múltiplas notebooks</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Caso real</div>
+</div>
+<a href="modulo-2-3.html" class="inline-block px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors">Ver Completo →</a>
+</div>
+
+<div id="modulo-2-4" class="bg-dark-800 rounded-xl border border-dark-600 mb-6 p-6">
+<div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.4</span><span class="text-xs text-neutral-500">~45 min</span></div>
+<h3 class="text-2xl font-bold mb-2">📊 Mission Control Dashboard</h3>
+<p class="text-neutral-400 text-sm mb-4">HTML único que agrega seus números: receita (Stripe), tráfego (GA), social (YouTube/X), CRM (HubSpot), tarefas (Notion). Briefing diário no café.</p>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4 text-xs">
+<div class="bg-dark-700 rounded p-2 text-neutral-300">HTML self-contained</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Multi-conector</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Morning briefing</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Revenue attribution</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Content ROI</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Alertas de mudança</div>
+</div>
+<a href="modulo-2-4.html" class="inline-block px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors">Ver Completo →</a>
+</div>
+
+<div id="modulo-2-5" class="bg-dark-800 rounded-xl border border-dark-600 mb-6 p-6">
+<div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.5</span><span class="text-xs text-neutral-500">~50 min</span></div>
+<h3 class="text-2xl font-bold mb-2">⚖️ Contract Review (5 agentes paralelos)</h3>
+<p class="text-neutral-400 text-sm mb-4">Skill do Zabir (ai-legal-claude). 14 comandos, 5 agentes paralelos: Clause Analyst, Risk Assessor, Compliance, Terms Mapper, Recommendations. Score 0-100 + relatório PDF.</p>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4 text-xs">
+<div class="bg-dark-700 rounded p-2 text-neutral-300">5 agentes paralelos</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Safety Score 0-100</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">GDPR/CCPA/SOC2</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">NDA generator</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">14 comandos</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">PDF profissional</div>
+</div>
+<a href="modulo-2-5.html" class="inline-block px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors">Ver Completo →</a>
+</div>
+
+<div id="modulo-2-6" class="bg-dark-800 rounded-xl border border-dark-600 mb-6 p-6">
+<div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.6</span><span class="text-xs text-neutral-500">~40 min</span></div>
+<h3 class="text-2xl font-bold mb-2">🎨 Canva Design em Escala</h3>
+<p class="text-neutral-400 text-sm mb-4">Brand kit no Canva + Cowork = 10 slides personalizados em minutos. Quote graphics, carrosseis, posts Instagram, sem você abrir o Canva.</p>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4 text-xs">
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Canva connector</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Brand kit</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Batch slides</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Carrosseis</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Variações A/B</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Export auto</div>
+</div>
+<a href="modulo-2-6.html" class="inline-block px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors">Ver Completo →</a>
+</div>
+
+<div id="modulo-2-7" class="bg-dark-800 rounded-xl border border-dark-600 mb-6 p-6">
+<div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.7</span><span class="text-xs text-neutral-500">~40 min</span></div>
+<h3 class="text-2xl font-bold mb-2">📝 Notion Productivity OS</h3>
+<p class="text-neutral-400 text-sm mb-4">Notion alimentado por Gmail + Calendar + conversas. To-do list dinâmica com prioridade, prazo, owner. Time inteiro vê. Funciona com Linear, Asana e similares.</p>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4 text-xs">
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Notion connector</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Gmail + Calendar</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Matrix prioridade</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Owner + due date</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Sync time</div>
+<div class="bg-dark-700 rounded p-2 text-neutral-300">Recap semanal</div>
+</div>
+<a href="modulo-2-7.html" class="inline-block px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors">Ver Completo →</a>
+</div>
+
+<div class="flex flex-col sm:flex-row gap-4 mt-12">
+<a href="../trilha1/index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Trilha 1 — Fundamentos</a>
+<a href="../trilha3/index.html" class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors">Trilha 3 — Avançado →</a>
+</div>
+
+</main>
+
+<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Claude Cowork · <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a> · 2026</p></div></footer>
+<script>
+const t=document.getElementById('theme-toggle'),d=document.getElementById('theme-toggle-dark-icon'),l=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;
+if(localStorage.getItem('theme')==='light'||(!localStorage.getItem('theme')&&!h.classList.contains('dark'))){d.classList.remove('hidden');h.classList.remove('dark')}else{l.classList.remove('hidden')}
+t.addEventListener('click',()=>{d.classList.toggle('hidden');l.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light')});
+</script>
+</body></html>
